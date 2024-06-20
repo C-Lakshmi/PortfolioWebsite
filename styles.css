@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Oswald;
+    src: url("fonts/Oswald-VariableFont_wght.ttf");
+}
+body{
+    background-color: rgb(254, 222, 228);
+    color: black;
+}
+nav{
+    float: left;
+    box-sizing:border-box;
+    width: 67%;
+    height: 5vw;
+}
+.title{
+    box-sizing:border-box;
+    float: left;
+    color: rgb(31, 3, 133);
+    width: 32%;
+    font-size: 2vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    height: 5vw;
+    margin-left: 0.8vw;
+}
+.nav {
+    border-radius: 4px;
+    font-size: 1.2vw;
+    margin-left: 0.6vw;
+    padding: 0.2vw;
+    display: inline-block;
+    margin-top: 1.7vw;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: plum;
+}
+
+.nav:hover {
+    background-color: purple;
+    cursor: pointer;
+}
+#intro{
+display: inline-block;
+margin-top: 3vw;
+width: 100%;
+}
+#intro img{
+    width: 48%;
+    float: left;
+}
+.about{
+    display: inline-block;
+    margin-top: 0vw;
+    width: 100%
+}
+.about .text{
+    float: left;
+    width: 58%;
+}
+
+#trophy{
+    width: 40%;
+    border-radius: 3px;
+}
+#achieve{
+    width: 58%;
+    float: right;
+}
+#extra{
+    width: 60%; 
+    float: left;
+}
+dt{
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: crimson;
+}
+dd{
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: darkgreen;
+}
+.error-message{
+    color: red;
+    font-size: 2vw;
+    height: 4vw;
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color:purple;
+    cursor: pointer;
+}
+#reset, #submit{
+    font-size: 3vw; 
+    color: rgb(19, 19, 144);
+    border-radius: 3px;
+}
+#reset:hover, #submit:hover {
+    color: plum;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 1.5vw;
+}
+.box{
+    width: 40%;
+    height: 45vw;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px, -2px -2px 5px;
+}
+.box:hover{
+    box-shadow: 4px 4px 5px, -4px -4px 5px;
+}
+@media screen and (max-width: 800px) {
+    nav, .title, #intro img, #bio, #trophy, #achieve, #extra, #speech, #pro, .text{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
