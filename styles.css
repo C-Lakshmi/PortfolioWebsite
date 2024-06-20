@@ -110,7 +110,7 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 }
 .box{
     width: 40%;
-    height: 45vw;
+    height: 48vw;
     background-color: lightblue;
     border: 1px solid black;
     border-radius: 3px;
