@@ -145,7 +145,7 @@ animation-duration: 1s;
 #main{
  animation-name: main;
  animation-duration: 5s;
- animation-delay: 8s;
+ animation-delay: 17s;
 }
 #grow{
     animation-name: big;
