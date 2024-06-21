@@ -145,7 +145,7 @@ animation-duration: 1s;
 #main{
  animation-name: main;
  animation-duration: 5s;
- animation-delay: 17s;
+ animation-delay: 18s;
 }
 #grow{
     animation-name: big;
@@ -154,7 +154,7 @@ animation-duration: 1s;
 }
 #p4{
     animation-name: glow;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-delay: 4s;
 }
@@ -171,7 +171,7 @@ animation-duration: 1s;
    50% {transform: rotateX(90deg) ;}
 }
 @keyframes glow {
-    50%{box-shadow: 4px 4px 6px black;}
+    50% {box-shadow: 0.25vw 0.25vw 0.45vw black;}
 }
 @media screen and (max-width: 800px) {
     nav, .title, #intro img, #bio, #trophy, #achieve, #extra, #speech, #pro, .text{

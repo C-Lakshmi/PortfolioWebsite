@@ -12,7 +12,7 @@ function display2() {
 }
 }
 if(res2){
-    setTimeout(display3,17000);
+    setTimeout(display3,18000);
     function display3() {
         document.querySelector("#bio h2").textContent="Web Developer and ML Enthusiast";
     }
