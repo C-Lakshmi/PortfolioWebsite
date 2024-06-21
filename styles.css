@@ -123,4 +123,7 @@ input[type="submit"]:hover, input[type="reset"]:hover{
     nav, .title, #intro img, #bio, #trophy, #achieve, #extra, #speech, #pro, .text{
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
+    .Mobile-bar.Mobile-bar--top {
+        background-color: rgb(254, 222, 228);
+    }
 }
