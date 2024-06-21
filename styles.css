@@ -115,15 +115,66 @@ input[type="submit"]:hover, input[type="reset"]:hover{
     border: 1px solid black;
     border-radius: 3px;
     box-shadow: 2px 2px 5px, -2px -2px 5px;
+    transform: rotateY(-90deg);
 }
-.box:hover{
-    box-shadow: 4px 4px 5px, -4px -4px 5px;
+.box.active{
+    width: 40%;
+    height: 48vw;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px, -2px -2px 5px;
+    transform: rotateY(0deg);
+    transition-duration: 2s;
+}
+.box:hover, .box.active:hover{
+    box-shadow: 6px 6px 10px, -6px -6px 10px;
+    transition-duration: 0s;
+}
+#p1{
+animation-name: display1;
+animation-delay: 2.7s;
+animation-duration: 1s;
+}
+#p2{
+    animation-name: display2;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+#main{
+ animation-name: main;
+ animation-duration: 5s;
+ animation-delay: 8s;
+}
+#grow{
+    animation-name: big;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+}
+#p4{
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+@keyframes display1{
+  50% {transform: scale(0.7);}
+}
+@keyframes big {
+   50% {transform: scale(2);} 
+}
+@keyframes display2 {
+ 50%{opacity: 1;}
+}
+@keyframes main {
+   50% {transform: rotateX(90deg) ;}
+}
+@keyframes glow {
+    50%{box-shadow: 4px 4px 6px black;}
 }
 @media screen and (max-width: 800px) {
     nav, .title, #intro img, #bio, #trophy, #achieve, #extra, #speech, #pro, .text{
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
-    .Mobile-bar.Mobile-bar--top {
-        background-color: rgb(254, 222, 228);
     }
 }
