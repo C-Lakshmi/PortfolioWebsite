@@ -2,6 +2,18 @@
     font-family: Oswald;
     src: url("fonts/Oswald-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: RobotoC;
+    src: url("fonts/RobotoCondensed-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: playwright;
+    src: url("fonts/PlaywriteUSTrad-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: cedarcursive;
+    src: url("fonts/CedarvilleCursive-Regular.ttf");
+}
 body{
     background-color: rgb(254, 222, 228);
     color: black;
@@ -58,7 +70,7 @@ width: 100%;
     margin-top: 0vw;
     width: 100%
 }
-.about .text{
+.about .text1{
     float: left;
     width: 58%;
 }
@@ -82,7 +94,7 @@ dt{
 }
 dd{
     font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:cedarcursive;
     color: darkgreen;
 }
 .error-message{
@@ -102,7 +114,7 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 #reset:hover, #submit:hover {
     color: plum;
 }
-.container{
+.contain{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -133,24 +145,20 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 }
 #p1{
 animation-name: display1;
-animation-delay: 2.7s;
-animation-duration: 1s;
+animation-delay: 4s;
+animation-duration: 2s;
 }
 #p2{
-    animation-name: display2;
-    animation-duration: 5s;
-    animation-delay: 4s;
-    animation-iteration-count: infinite;
-}
-#main{
- animation-name: main;
- animation-duration: 5s;
- animation-delay: 18s;
+    animation-name: display2,main;
+    animation-duration: 5s,3s;
+    animation-delay: 6s,13s;
+    animation-iteration-count: 2,1;
+    animation-fill-mode: forwards,none;
 }
 #grow{
     animation-name: big;
-    animation-duration: 4s;
-    animation-iteration-count: 2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 }
 #p4{
     animation-name: glow;
@@ -158,14 +166,49 @@ animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-delay: 4s;
 }
+.container{
+    display: flex;
+    width: 52%;
+    overflow: hidden;
+    justify-content: center;
+}
+.container .text{
+    position: relative;
+    color: darkolivegreen;
+    font-size: 2.2vw;
+    font-weight: bold;
+    left: 1vw;
+    font-family: 'Georgia', 'Times New Roman';
+}
+.text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(254, 222, 228);
+    border-left: 0.3vw solid darkolivegreen;
+    animation:  animate 4s steps(12) 2s infinite;
+}
+@keyframes  animate{
+    40%, 60%{
+        left: calc(100% + 0.6vw);
+    }
+    100%{
+        left: 0%;
+    }
+}
 @keyframes display1{
-  50% {transform: scale(0.7);}
+  50% {transform: scale(1.3);}
 }
 @keyframes big {
    50% {transform: scale(2);} 
 }
 @keyframes display2 {
- 50%{opacity: 1;}
+    0%{opacity: 0;}
+ 50%{opacity: 0.5;}
+ 100%{opacity: 1;}
 }
 @keyframes main {
    50% {transform: rotateX(90deg) ;}

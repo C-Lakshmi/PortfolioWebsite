@@ -23,14 +23,16 @@
 <form style="text-align: center;" id="form" onsubmit="return validateForm()" autocomplete="off">
     <h1 style="color: rgb(19, 19, 144); font-size: 3.2vw; display: inline-block; font-family: Oswald;">Contact Form</h1>
     <p><label for="name" style="font-size: 3vw; color:forestgreen;">Name: </label>
-    <input type="text" id="name" style="font-size: 3vw; color: rgb(19, 19, 144);" autocomplete="off"><br>
+    <input type="text" id="name" style="font-size: 3vw; color: rgb(19, 19, 144);" autocomplete="off" placeholder="Enter your name"><br>
     <span id="nameError" class="error-message"></span></p><br>
     <label for="email" style="font-size: 3vw; color:forestgreen;">Email: </label>
-    <input type="email" id="email" style="font-size: 3vw; color: rgb(19, 19, 144);" autocomplete="off"><br>
+    <input type="email" id="email" style="font-size: 3vw; color: rgb(19, 19, 144);" autocomplete="off" placeholder="Enter your email"><br>
     <span id="emailError" class="error-message"></span><br>
+    <label for="subject" style="font-size: 3vw; color:forestgreen;">Subject:</label>
+    <input type="text" id="subject" style="font-size: 3vw; color: rgb(19, 19, 144);" autocomplete="off" placeholder="Enter the subject"><br><br>
     <label for="message" style="font-size: 3vw; color:forestgreen;">Message:</label><br>
-    <textarea id="message" style="font-size: 2vw; height: 10vw; width: 40vw; color: rgb(19, 19, 144);"></textarea><br>
-    <span id="msgError" class="error-message"></span><br>
+    <textarea id="message" style="font-size: 2vw; height: 10vw; width: 40vw; color: rgb(19, 19, 144);" placeholder="Enter a message of atleast 4 characters"></textarea><br>
+    <span id="msgError" class="error-message"></span>
     <pre><input type="reset" id="reset">   <input type="submit" id="submit"></pre>
 </form>
 <script src="web.js"></script>

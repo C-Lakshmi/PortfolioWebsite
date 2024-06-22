@@ -1,21 +1,9 @@
-let item,res2;
+let item,res2,res3;
 item=document.querySelector("#bio h1");
-async function time(){
-let res= await setTimeout(display,2500);
+ async function time(){
+let res= await setTimeout(display,1500);
 function display() {
     item.style.display="block";
-}
-if(res){
-res2= await setTimeout(display2,14000);
-function display2() {
-    document.querySelector("#bio h2").textContent="Passionate about Finance and Statistics!";
-}
-}
-if(res2){
-    setTimeout(display3,18000);
-    function display3() {
-        document.querySelector("#bio h2").textContent="Web Developer and ML Enthusiast";
-    }
 }
 }
 time();
@@ -70,3 +58,20 @@ function boxReveal() {
 window.addEventListener('scroll', boxReveal);
 // To check the scroll position on page load
 boxReveal();
+const text = document.querySelector(".text");
+const textLoad = () => {
+    setTimeout(() => {
+        //text.style.marginLeft="-1.8vw";
+        text.textContent = "Front-End Developer";
+    }, 2000);
+    setTimeout(() => {
+        text.textContent = "ML Enthusiast";
+        //text.style.marginLeft="-5.2vw";
+    }, 6000);
+    setTimeout(() => {
+        text.textContent = "Data Analyst";
+        //text.style.marginLeft="-6vw";
+    }, 10000); //1s = 1000 milliseconds
+}
+textLoad();
+setInterval(textLoad, 12000);
