@@ -191,6 +191,32 @@ animation-duration: 2s;
     border-left: 0.3vw solid darkolivegreen;
     animation:  animate 4s steps(12) 2s infinite;
 }
+footer{
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    background-color: purple;
+    color: plum;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.footer_col{
+    width: 30vw;
+    margin-left: 2vw;
+    text-align: center; 
+    color: plum; 
+    padding-bottom: 1vw;
+}
+.footer_col a:hover{
+    color: plum;
+    
+}
+#right{
+    display: flex;
+    color: plum; 
+}
 @keyframes  animate{
     40%, 60%{
         left: calc(100% + 0.6vw);
