@@ -17,6 +17,8 @@
 body{
     background-color: rgb(254, 222, 228);
     color: black;
+    margin-left: 0vw; 
+    margin-bottom: 0vw;
 }
 nav{
     float: left;
@@ -59,6 +61,7 @@ a:hover{
 #intro{
 display: inline-block;
 margin-top: 3vw;
+margin-left: 1vw;
 width: 100%;
 }
 #intro img{
@@ -119,6 +122,7 @@ input[type="submit"]:hover, input[type="reset"]:hover{
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 1.5vw;
+    margin-top: 3vw;
 }
 .box{
     width: 40%;
@@ -128,6 +132,7 @@ input[type="submit"]:hover, input[type="reset"]:hover{
     border-radius: 3px;
     box-shadow: 2px 2px 5px, -2px -2px 5px;
     transform: rotateY(-90deg);
+    margin-top: 1.5vw;
 }
 .box.active{
     width: 40%;
@@ -167,17 +172,18 @@ animation-duration: 2s;
     animation-delay: 4s;
 }
 .container{
-    display: flex;
+    display: block;
     width: 52%;
     overflow: hidden;
     justify-content: center;
+    text-align: center;
 }
 .container .text{
     position: relative;
     color: darkolivegreen;
     font-size: 2.2vw;
     font-weight: bold;
-    left: 1vw;
+    left: 0.5vw;
     font-family: 'Georgia', 'Times New Roman';
 }
 .text::before{
@@ -197,10 +203,7 @@ footer{
     align-items: center;
     background-color: purple;
     color: plum;
-    margin-left: -1vw;
-    margin-right: -1vw;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 100vw;
 }
 .footer_col{
     width: 30vw;
@@ -244,6 +247,25 @@ footer{
 }
 @media screen and (max-width: 800px) {
     nav, .title, #intro img, #bio, #trophy, #achieve, #extra, #speech, #pro, .text{
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      width: 100%; 
     }
+    nav{
+        margin-left: 2.5vw;
+        margin-top: 1vw;
+    }
+    .nav{
+       margin-left: 2.5vw; 
+       font-size: 1.4vw;
+    }
+    .container{
+        width: 100%;
+    }
+    #index_contain,#prj_title{
+        display: none;
+    }
+    footer{
+    margin-top: 11vh;
+    width: 100vw;
+    }
+    
 }

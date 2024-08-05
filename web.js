@@ -75,3 +75,9 @@ const textLoad = () => {
 }
 textLoad();
 setInterval(textLoad, 12000);
+function phonedisplay(){
+   let contain= document.querySelector(".contain");
+   let prj_title= document.querySelector("#prj_title");
+   contain.style.display="flex";
+   prj_title.style.display="block";
+}

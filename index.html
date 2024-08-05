@@ -27,15 +27,15 @@
 <div id="bio" style="text-align: center;">
 <h3 id="grow" style="display: inline-block;">Hello there!</h3>
 <h1 style="color: darkslateblue; display: none; font-size: 2.7vw; font-family: cedarcursive" id="main">Lakshmi here!</h1>
-<div class="container">
+<div class="container" style="text-align: center;">
     <span style="color: darkred; font-size: 2.2vw; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;">I'm a</span>
     <span class="text">Front-End Developer</span>
-</div><br>
-<div id="p1" style="font-family: cedarcursive; color: purple; display: inline-block; font-size: 2vw;">Are you looking for a Web Developer..?</div><br>
+</div>
+<div id="p1" style="font-family: cedarcursive; color: purple; display: inline-block; font-size: 2vw; margin-top: 1vw;">Are you looking for a Web Developer..?</div><br>
 <a href="https://www.iitg.ac.in/dsai/dsai_btech_courses.html" target="_blank" title="Core courses in curriculum"><p id="p2" style="font-family: Oswald; color:plum; font-size: 1.5vw; opacity:0; display: inline-block; background-color: black; border-radius: 15px; padding: 0.5vw;">IITG DSAI'27 Student</p></a>
-<p id="p3" style="font-family: playwright; color: darkblue;">You are in the right place! Let's connect and collaborate!<br> Looking for opportunities in startups as well as established companies!
+<p id="p3" style="font-family: playwright; color: darkblue; font-size: 1.2vw;">You are in the right place! Let's connect and collaborate!<br> Looking for opportunities in startups as well as established companies!
 </p>
-<div style="font-family: Oswald; color: darkgreen; font-size: 2vw; display: inline-block;"><pre id="p4" style="font-family: Oswald; background-color: floralwhite; border-radius: 10px; color: darkgreen; font-size: 2vw;"> Go check out my projects! &#8595;</pre></div>
+<div style="font-family: Oswald; color: darkgreen; font-size: 2vw; display: inline-block;" onclick="phonedisplay()"><pre id="p4" style="font-family: Oswald; background-color: floralwhite; border-radius: 10px; color: darkgreen; font-size: 2vw;"> Go check out my projects! &#8595;</pre></div>
 <br>
 <a href="https://www.linkedin.com/in/lakshmi-c-/" title="Linkedin Profile" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
 <a href="mailto:lakshmicmumbai@gmail.com" target="_blank" title="Personal mail id" style="margin-left: 2vw;"><i class="fa-solid fa-envelope fa-2x"></i></a>
@@ -43,8 +43,8 @@
 <a href="https://github.com/C-Lakshmi" target="_blank" title="Github profile" style="margin-left: 2vw;"><i class="fa-brands fa-github fa-2x"></i></a>
 </div>
 </div>
-<h1 style="color: darkslateblue; text-align: center; font-family: Oswald; width: 100%; font-size: 2.5vw;">Projects</h1>
-<div class="contain"">
+<h1 id="prj_title" style="color: darkslateblue; text-align: center; font-family: Oswald; width: 100%; font-size: 2.5vw; margin-top: 4vw;">Projects</h1>
+<div class="contain" id="index_contain">
     <div class="box">
     <img src="images\task1_webD.png" width="100%" height="50%">
     <h2 style="text-align: center; font-family: Oswald; font-size: 1.8vw;">Building my first Website to replicate given image in PS</h2>
@@ -100,31 +100,30 @@
         <a href="#" class="logo" style="font-size: 1.8vw; color: plum;">
             Lakshmi. C
         </a>
-      <div class="footer_socials" style="margin-top: 2vw;">
-        <a href="#"><i class="fa-brands fa-facebook fa-2x" style="margin-left: 0vw !important;color: plum;"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: plum; margin-left: 1vw;"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter fa-2x" style="color: plum; margin-left: 1vw;"></i></a>
+      <div class="footer_socials" style="margin-top: 1.5vw;">
+        <a href="#"><i class="fa-brands fa-facebook" style="margin-left: 0vw !important;color: plum; font-size: 2vw;"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram" style="color: plum; margin-left: 1vw; font-size: 2vw;"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter" style="color: plum; margin-left: 1vw; font-size: 2vw;"></i></a>
       </div>
     </div>
     <div id="right">
     <div class="footer_col" id="col1">
       <h4 style="font-family: RobotoC; font-size: 2vw;">Professional</h4><br>
-      <a href="index.html">Home</a><br>
-      <a href="projects.html">Projects</a><br>
-      <a href="exp.html">Experience</a><br>
-      <a href="#">Blogs</a>
+      <a href="index.html" style="font-size: 2vw;">Home</a><br>
+      <a href="projects.html" style="font-size: 2vw;">Projects</a><br>
+      <a href="exp.html" style="font-size: 2vw;">Experience</a><br>
+      <a href="#" style="font-size: 2vw;">Blogs</a>
     </div>
     <div class="footer_col" id="col2">
         <h4 style="font-family: RobotoC; font-size: 2vw;">Personal</h4><br>
-        <a href="about.html">About Me</a><br>
-        <a href="achieve.html">Achievements</a><br>
-        <a href="extra.html">Extra-Curriculars</a><br>
-        <a href="contact.html">Contact Me</a><br>
+        <a href="about.html" style="font-size: 2vw;">About Me</a><br>
+        <a href="achieve.html" style="font-size: 2vw;">Achievements</a><br>
+        <a href="extra.html" style="font-size: 2vw;">Extra-Curriculars</a><br>
+        <a href="contact.html" style="font-size: 2vw;">Contact Me</a><br>
       </div>
     </div>
 </footer>
-<div class="footer_bar" style=" padding: 1vw; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; display: block; background-color: purple; font-size: 1vw;margin-left: -1vw;
-    margin-right: -1vw; margin-bottom: -1vw; border-radius: 10px;border-top-right-radius: 0px;border-top-left-radius: 0px;">
+<div class="footer_bar" style=" padding: 1vw; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; display: block; background-color: purple; font-size: 1vw; width: 98vw;">
     Copyright © 2024 Lakshmi.C All rights reserved.
   </div>
 <script src="web.js"></script>
