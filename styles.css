@@ -97,7 +97,7 @@ dt{
 }
 dd{
     font-style: italic;
-    font-family:cedarcursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: darkgreen;
 }
 .error-message{
